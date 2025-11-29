@@ -1,0 +1,37 @@
+.my-card {
+  width: 18rem;          /* fixed width */
+  height: 350px;         /* fixed height for all cards */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Make all images same height */
+.fixed-img {
+  height: 180px;
+  object-fit: cover;      /* keeps image nice */
+  width: 100%;
+}
+
+/* optional line divider */
+.divider {
+  margin: 0;
+  border-top: 1px solid #ccc;
+}
+
+.card{
+    width: 25rem !important;
+    border: none !important;
+    border-radius: 2rem !important;
+   
+
+}
+
+.card-img-top{
+    height: 20rem ;
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover;
+
+}
+

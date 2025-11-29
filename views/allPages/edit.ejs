@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <br><br>
+    <h2>Edit your E-commerce product info.</h2>
+    <form method="POST" action="/listing/<%=listing._id %>/update?_method=PUT" novalidate class="needs-validation">
+
+    <div class="row">
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Title" name="listing[title]" value="<%=listing.title %>" >
+    <div class="valid-feedback">Title looks good!</div>
+    <div class="invalid-feedback">It is mandatory</div>
+  </div>
+  
+   </div><br><br>
+   <div class="row">
+  <div class="col">
+    <input type="image" class="form-control" placeholder="enter URL" name="listing[image]">
+    <div class="invalid-feedback">Please provide image link</div>
+  </div>
+  <div class="col">
+    <input type="number" class="form-control" placeholder="Price" name="listing[price]" value="<%=listing.price %>">
+    <div class="invalid-feedback">Please enter appropriate price</div>
+  </div>
+   </div>
+   <br><br>
+   
+
+<button class="btn btn-primary mt-4">Edit</button>
+<br>
+
+
+  </form><br>
+
+  <form method="GET" action="/home">
+    <button class="btn btn-primary">Back to all products</button>
+  </form>
+</body>
+</html>
